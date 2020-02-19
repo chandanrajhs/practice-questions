@@ -1,19 +1,14 @@
 #include<stdio.h>
 void main()
 {
-int n,i,j,z;
+int n,i,j;
 clrscr();
 scanf("%d",&n);
 for(i=n;i>0;i--)
 {
-z=1;
-for(j=0;j<n;j++)
+for(j=1;j<=i;j++)
 {
-	if(j<i)
-	{
-	printf("%d",z);
-	z++;
-	}
+	printf("%d",j);
 }
 printf("\n");
 }
