@@ -1,50 +1,20 @@
 #include<stdio.h>
 void main()
 {
-int n,i,j,k,z;
+int i,j,n;
 clrscr();
 scanf("%d",&n);
-for(i=0;i<n;i++)
+for(i=1;i<=n;i++)
 {
-z=1;
-	for(j=0;j>(n-i);j++)
-	{
-		printf(" ");
-	}
-
-	for(k=0;k<i;k++)
-	{
-	if(k==0||k==i-1)
-	{
-		printf("%d ",z);
-		z++;
-	}
+for(j=1;j<=n;j++)
+{
+	if(j==1||j==i||i==n)
+	printf("%d ",j);
 	else
-	{
-		printf("  ");
-		z++;
-	}
-	}
+	printf("  ");
+}
 printf("\n");
-if(i==n-1)
-{
-z=1;
-for(k=0;k<n;k++)
-{
-	printf("%d ",z);
-	z++;
-}
-}
+
 }
 getch();
 }
-
-output:
-6
-	
-1
-1 2
-1   3
-1     4
-1       5
-1 2 3 4 5 6
