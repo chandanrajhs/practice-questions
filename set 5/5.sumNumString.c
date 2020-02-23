@@ -2,19 +2,19 @@
 void main()
 {
     char string[80];
-    int count, nc = 0, sum = 0;
+    int i, count = 0, sum = 0;
  
     printf("Enter the string  \n");
     scanf("%s", string);
-    for (count = 0; string[count] != '\0'; count++)
+    for (i = 0; string[i] != '\0'; i++)
     {
-        if ((string[count] >= '0') && (string[count] <= '9'))
+        if ((string[i] >= '0') && (string[i] <= '9'))
         {
-            nc += 1;
-            sum += (string[count] - '0');
+            count += 1;
+            sum += (string[i] - '0');
         }
     }
-    printf("NO. of Digits in the string = %d\n", nc);
+    printf("NO. of Digits in the string = %d\n", count);
     printf("Sum of all digits = %d\n", sum);
 }
 output:-
@@ -23,6 +23,7 @@ num32ab67
 NO. of Digits in the string = 4
 Sum of all digits = 18
 
+/*
 //solutions in java
 import java.util.Scanner;
 
@@ -44,3 +45,4 @@ output:-
 Enter the string:
 num32ab67
 18
+*/
