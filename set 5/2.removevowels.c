@@ -1,39 +1,42 @@
 #include <stdio.h>
 #include<string.h>
 int check_vowel(char);
+
 int main()
 {
-char s[100], t[100];
+char str[100], temp[100];
 int c, d = 0;
 printf("Enter the string:\n");
-gets(s);
-for(c = 0; s[c] != '\0'; c++)
+scanf("%s",str);
+for(c = 0; str[c] != '\0'; c++)
 {
-if(check_vowel(s[c]) == 0)
+if(check_vowel(str[c]) == 0)
 {
-t[d] = s[c];
+temp[d] = str[c];
 d++;
 }
 }
-t[d] = '\0';
-strcpy(s, t);
+temp[d] = '\0';
+strcpy(str,temp);
 
-printf("%s\n", s);
+printf("string without vowels is %s\n",str);
 return 0;
 }
 int check_vowel(char ch)
 {
 if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 'I' || ch =='o' || ch=='O' || ch == 'u' || ch == 'U')
-return 1;
+    return 1;
 else
-return 0;
+    return 0;
 }
+
 
 output:-
 Enter the string:
 Morning
 Mrnng
 
+/*
 //Solutions in java
 
 import java.util.Scanner;
@@ -46,10 +49,11 @@ public class vowels {
 
         String res=x.replaceAll("[aeiou]","");
 
-       
+
         System.out.println("The  String without vowels is:"+res);
     }
 }
 output:-
 Morning
 The  String without vowels is:mrnng
+*/
