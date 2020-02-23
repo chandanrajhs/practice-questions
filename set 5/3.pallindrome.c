@@ -6,7 +6,7 @@ int main()
 char a[100], b[100];
 
 printf("Enter the string : ");
-gets(a);
+scanf("%s",a);
 
 strcpy(b, a); /* Copying input string */
 strrev(b); /* Reversing the string */
@@ -18,9 +18,12 @@ printf("The string is not t a palindrome\n");
 
 return 0;
 }
+
+
 output:-
 Enter the string : madam
 The string is a palindrome
+/*
 
 //solutions in java
 import java.util.Scanner;
@@ -40,11 +43,9 @@ public class vowels {
         {
             System.out.println("String is not a palindrome");
         }
-
-
-
     }
 }
+
 output:-
 Enter the string:
 Madam
