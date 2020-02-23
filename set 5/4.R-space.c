@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-char *remove_white_spaces(char *str)
+char remove_white_spaces(char *str)
 {
 int i = 0, j = 0;
 while (str[i])
@@ -26,6 +26,7 @@ output:-
 L I F E
 LIFE
 
+/*
 //solutions in java
 import java.util.Scanner;
 
@@ -45,3 +46,4 @@ public class vowels {
 Enter the string:
 L I F E
 LIFE
+*/
