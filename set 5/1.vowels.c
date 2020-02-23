@@ -1,28 +1,31 @@
-#include<stdio.h>
+//in c
+
+#include <stdio.h>
 
 int main()
 {
-char str[100]; // characer array
-char *ptr;  // pointer
-int cntV,cntC;  // variables to store the count of vowels and sonsonants
+    char str[50];
+    int i, vowels, consonants;
+    i = vowels = consonants = 0;
 
-printf("Enter a string: ");
-gets(str);
+    printf("Enter a String :");
+    scanf("%s",str);
 
-ptr=str;  // Assign the character array to the pointer
+    while (str[i] != '\0')
+    {
+        if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||
+           str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')
+        {
+            vowels++;
+        }
+        else
+            consonants++;
+        i++;
+    }
+    printf("\n Number of Vowels in this String = %d", vowels);
+    printf("\n Number of Consonants in this String = %d", consonants);
 
-cntV=cntC=0;
-while(*ptr!='\0')  // Check if the scanned character is a vowel
-{
-if(*ptr=='A' ||*ptr=='E' ||*ptr=='I' ||*ptr=='O' ||*ptr=='U' ||*ptr=='a' ||*ptr=='e' ||*ptr=='i' ||*ptr=='o' ||*ptr=='u')
-cntV++;   // increment vowel count
-else
-cntC++;  // increment consonant count
-ptr++;    // Increment the pointer to scan the next character
-}
-
-printf("Total number of vowels : %d\nTotal number of consonants : %d\n",cntV,cntC);
-return 0;
+    return 0;
 }
 output:-
 
@@ -31,6 +34,8 @@ Total number of vowels : 3
 Total number of consonants : 4
 
 //solutions in java
+    
+/*
 import java.util.Scanner;
 
 public class vowels {
@@ -62,3 +67,4 @@ Enter the string:
 college
 The no of vowels in String:3
 The no of consonants in String:4
+*/
