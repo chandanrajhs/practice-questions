@@ -33,3 +33,8 @@ sum = sum + isPerfectSquare(arr[i]);
 printf("%d",sum);
 return 0;
 }
+
+output:-
+4
+1 2 4 6
+5
