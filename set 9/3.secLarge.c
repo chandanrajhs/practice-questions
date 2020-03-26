@@ -73,7 +73,7 @@ The second largest element is 6
 
 
 
-
+/*
 
 //solutions in java
 import java.util.Arrays;
