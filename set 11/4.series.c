@@ -17,3 +17,55 @@ output:-
 Enter the number
 5
 the sum of series is 2.283333
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*
+    in java
+    
+    import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number");
+        int n=sc.nextInt();
+        double sum=0.0;
+
+        for(double i=1;i<=n;i++)
+        {
+
+            sum=sum+1/i;
+        }
+        System.out.println("the sum of series is "+sum);
+    }
+}
